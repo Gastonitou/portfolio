@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ghassen Ajili — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Inter', -apple-system, sans-serif;
+      background: #0f0f23;
+      color: #e0e0e0;
+      line-height: 1.6;
+    }
+    .container { max-width: 900px; margin: 0 auto; padding: 40px 24px; }
+
+    /* Header */
+    header {
+      text-align: center;
+      padding: 60px 0 40px;
+      border-bottom: 1px solid #1e1e3f;
+    }
+    header h1 {
+      font-size: 2.8rem;
+      font-weight: 800;
+      background: linear-gradient(135deg, #e94560, #0f3460);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    header .subtitle {
+      font-size: 1.1rem;
+      color: #8888aa;
+      margin-top: 8px;
+      font-weight: 400;
+    }
+    header .contact {
+      margin-top: 16px;
+      font-size: 0.9rem;
+      color: #6666aa;
+    }
+    header .contact a {
+      color: #e94560;
+      text-decoration: none;
+    }
+    header .contact a:hover { text-decoration: underline; }
+
+    /* Sections */
+    section { margin: 50px 0; }
+    h2 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin-bottom: 24px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    h2::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: linear-gradient(90deg, #e94560, transparent);
+    }
+
+    /* Projects */
+    .project {
+      background: #15153a;
+      border: 1px solid #1e1e4a;
+      border-radius: 12px;
+      padding: 24px;
+      margin-bottom: 20px;
+      transition: transform 0.2s, border-color 0.2s;
+    }
+    .project:hover {
+      transform: translateY(-2px);
+      border-color: #e94560;
+    }
+    .project h3 { font-size: 1.2rem; font-weight: 700; margin-bottom: 4px; }
+    .project .tech {
+      font-size: 0.75rem;
+      color: #e94560;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 10px;
+    }
+    .project p { color: #b0b0cc; font-size: 0.92rem; }
+    .project ul { margin: 8px 0 0 18px; font-size: 0.9rem; color: #b0b0cc; }
+    .project .link { margin-top: 10px; }
+    .project .link a {
+      color: #4fc3f7;
+      text-decoration: none;
+      font-size: 0.85rem;
+    }
+    .project .link a:hover { text-decoration: underline; }
+
+    /* Skills Tags */
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 12px;
+    }
+    .skill-item {
+      background: #15153a;
+      border: 1px solid #1e1e4a;
+      border-radius: 8px;
+      padding: 12px 16px;
+      display: flex;
+      gap: 8px;
+      font-size: 0.85rem;
+    }
+    .skill-item strong { color: #e94560; min-width: 100px; }
+    .skill-item span { color: #b0b0cc; }
+
+    /* Experience */
+    .exp-item {
+      background: #15153a;
+      border: 1px solid #1e1e4a;
+      border-radius: 8px;
+      padding: 18px 20px;
+      margin-bottom: 14px;
+    }
+    .exp-item h3 { font-size: 1rem; font-weight: 600; }
+    .exp-item .exp-meta {
+      font-size: 0.8rem;
+      color: #6666aa;
+      margin-bottom: 6px;
+    }
+    .exp-item ul { margin: 6px 0 0 16px; font-size: 0.85rem; color: #b0b0cc; }
+    .exp-item ul li { margin-bottom: 3px; }
+
+    /* Tags */
+    .tag {
+      display: inline-block;
+      background: #1e1e4a;
+      color: #b0b0cc;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 0.78rem;
+      margin: 3px 4px 3px 0;
+      border: 1px solid #2a2a5a;
+    }
+    .tags { margin: 10px 0; }
+
+    /* Languages */
+    .lang-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+      gap: 8px;
+    }
+    .lang-item {
+      background: #15153a;
+      border: 1px solid #1e1e4a;
+      border-radius: 8px;
+      padding: 10px 14px;
+      font-size: 0.9rem;
+    }
+    .lang-item .flag { margin-right: 6px; }
+    .lang-item .level {
+      color: #8888aa;
+      font-size: 0.8rem;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 40px 0;
+      border-top: 1px solid #1e1e3f;
+      font-size: 0.8rem;
+      color: #5555aa;
+    }
+
+    @media (max-width: 600px) {
+      header h1 { font-size: 1.8rem; }
+      .container { padding: 24px 16px; }
+      .skills-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <!-- Header -->
+    <header>
+      <h1>Ghassen Ajili</h1>
+      <div class="subtitle">Electrical Engineer • IoT & Automation • Building with AI</div>
+      <div class="contact">
+        Cologne, Germany &nbsp;|&nbsp;
+        <a href="mailto:ghassenlaajili6@gmail.com">ghassenlaajili6@gmail.com</a> &nbsp;|&nbsp;
+        +49 151 24952018 &nbsp;|&nbsp;
+        <a href="https://github.com/ghassenajili">GitHub ↗</a>
+      </div>
+    </header>
+
+    <!-- About -->
+    <section>
+      <h2>About</h2>
+      <p style="color:#b0b0cc; font-size:0.95rem;">
+        Electrical engineer (B.Eng.) with a deep passion for automation, IoT, and AI. I build things that work — from sensor data pipelines to process control systems. Hands-on experience at Ford, diaelectricum, and Igus. Fluent in 5 languages. Looking for a place where <strong style="color:#e94560;">AI meets real-world operations</strong>.
+      </p>
+    </section>
+
+    <!-- Projects -->
+    <section>
+      <h2>Projects</h2>
+
+      <div class="project">
+        <h3>Industrial IoT Monitoring System</h3>
+        <div class="tech">Python • IoT • Sensor Data • Real-time Analytics</div>
+        <p>End-to-end IoT system for real-time acquisition, processing, and visualization of industrial sensor data. Features threshold-based alerts, structured data storage, and equipment health dashboard. Enables predictive maintenance and reduces downtime.</p>
+      </div>
+
+      <div class="project">
+        <h3>PV Plant Simulation (MATLAB/Simulink)</h3>
+        <div class="tech">MATLAB • Simulink • MPPT • Power Electronics</div>
+        <p>Complete simulation of a photovoltaic system with single-phase inverter, PWM control, MPPT algorithm, battery storage, and grid connection. Optimized energy flow analysis from component to system level.</p>
+      </div>
+
+      <div class="project">
+        <h3>Process Control with SIMATIC PCS 7</h3>
+        <div class="tech">SIMATIC PCS 7 • CFC/SFC • WinCC • TIA Portal</div>
+        <p>Planned and simulated an automated mixing plant: CFC/SFC control logic, sensor/actuator parameterization, and WinCC visualization interface for operator control and monitoring.</p>
+      </div>
+
+      <div class="project">
+        <h3>Weather Web Application</h3>
+        <div class="tech">Python • API Integration • GPS • Responsive Design</div>
+        <p>Full-stack weather app with real-time weather data, GPS-based location detection, 7-day forecast, and responsive mobile-friendly design.</p>
+        <div class="link">🔗 <a href="https://6735f3c8-ceae-4744-8b44-706e6334c6f9-00-3obda55n4zh4.riker.replit.dev/">Live Demo</a></div>
+      </div>
+
+      <div class="project">
+        <h3>Superconducting Transformers in Medium Voltage Grids</h3>
+        <div class="tech">Energy Technology • High Voltage • Simulation</div>
+        <p>Bachelor thesis investigating HTS transformer applications in medium voltage distribution networks — efficiency gains, fault current limiting, and economic viability analysis.</p>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section>
+      <h2>Experience</h2>
+
+      <div class="exp-item">
+        <h3>Quality Control & Maintenance — Ford Werke GmbH</h3>
+        <div class="exp-meta">Cologne | 2022 – 2024</div>
+        <ul>
+          <li>Quality inspections on automated production lines</li>
+          <li>Process data analysis for equipment performance evaluation</li>
+          <li>Maintenance support and cross-team coordination</li>
+        </ul>
+      </div>
+
+      <div class="exp-item">
+        <h3>Energy & Building Technology — diaelectricum GmbH</h3>
+        <div class="exp-meta">Cologne | Mar 2024 – Jul 2025</div>
+        <ul>
+          <li>Electrical planning & PV design per VDE standards</li>
+          <li>BIM (Revit) integration, HOAI phases 1–8</li>
+          <li>Technical documentation, circuit diagrams, project coordination</li>
+        </ul>
+      </div>
+
+      <div class="exp-item">
+        <h3>Maintenance Engineering — Igus GmbH</h3>
+        <div class="exp-meta">Cologne | Jan 2023 – Feb 2024</div>
+        <ul>
+          <li>Fault analysis and troubleshooting on electromechanical systems</li>
+          <li>Cross-department coordination to minimize downtime</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section>
+      <h2>Technical Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-item"><strong>Programming</strong><span>Python, C++, MATLAB/Simulink</span></div>
+        <div class="skill-item"><strong>Automation</strong><span>SIMATIC PCS 7, TIA Portal, WinCC</span></div>
+        <div class="skill-item"><strong>Design & CAD</strong><span>EPLAN, AutoCAD, Revit (BIM)</span></div>
+        <div class="skill-item"><strong>Simulation</strong><span>MATLAB, Neplan</span></div>
+        <div class="skill-item"><strong>IoT & Web</strong><span>Sensor Data, APIs, GitHub</span></div>
+        <div class="skill-item"><strong>AI & Data</strong><span>AI Fundamentals, Data Analysis</span></div>
+      </div>
+      <div class="tags">
+        <span class="tag">Python</span>
+        <span class="tag">C++</span>
+        <span class="tag">MATLAB</span>
+        <span class="tag">PCS 7</span>
+        <span class="tag">TIA Portal</span>
+        <span class="tag">WinCC</span>
+        <span class="tag">EPLAN</span>
+        <span class="tag">AutoCAD</span>
+        <span class="tag">Revit</span>
+        <span class="tag">Neplan</span>
+        <span class="tag">Git/GitHub</span>
+        <span class="tag">IoT</span>
+        <span class="tag">API</span>
+        <span class="tag">AI</span>
+      </div>
+    </section>
+
+    <!-- Languages -->
+    <section>
+      <h2>Languages</h2>
+      <div class="lang-grid">
+        <div class="lang-item"><span class="flag">🇩🇪</span> German — <span class="level">C1 (fluent)</span></div>
+        <div class="lang-item"><span class="flag">🇬🇧</span> English — <span class="level">Professional</span></div>
+        <div class="lang-item"><span class="flag">🇫🇷</span> French — <span class="level">Fluent</span></div>
+        <div class="lang-item"><span class="flag">🇳🇱</span> Dutch — <span class="level">B2</span></div>
+        <div class="lang-item"><span class="flag">🇹🇳</span> Arabic — <span class="level">Native</span></div>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section>
+      <h2>Education</h2>
+      <div class="exp-item">
+        <h3>Bachelor of Engineering (B.Eng.) — Electrical Engineering</h3>
+        <div class="exp-meta">Rheinische Fachhochschule Köln | 2024</div>
+        <p style="color:#b0b0cc; font-size:0.85rem; margin-top:4px;">Thesis: Superconducting Transformers in Medium Voltage Grids</p>
+      </div>
+    </section>
+
+    <footer>
+      Ghassen Ajili — Built with curiosity, shipped with results.
+    </footer>
+
+  </div>
+</body>
+</html>
