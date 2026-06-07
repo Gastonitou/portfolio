@@ -1,71 +1,94 @@
 # Ghassen Ajili — Portfolio
 
-Electrical Engineer | IoT & Automation | AI Enthusiast
+**Electrical Engineer (B.Eng.) | IoT & Automation | AI Enthusiast**
 
-👋 Welcome! I'm an electrical engineer (B.Eng.) passionate about building systems where **AI meets real-world operations**.
-
-📍 Cologne, Germany  
-📧 ghassenlaajili6@gmail.com  
-🔗 [GitHub](https://github.com/ghassenajili)
+📍 Cologne, Germany · 📧 ghassenlaajili6@gmail.com · 🔗 [GitHub](https://github.com/Gastonitou)
 
 ---
 
-## 🚀 Featured Projects
+## 👋 About
 
-### 1. Industrial IoT Monitoring System
-**Python · IoT · Sensor Data · Real-time Analytics**
-
-End-to-end IoT system for real-time acquisition, processing, and visualization of industrial sensor data. Features threshold-based alerts, structured data storage, and equipment health dashboard. Enables **predictive maintenance** and reduces downtime.
-
-### 2. PV Plant Simulation (MATLAB/Simulink)
-**MATLAB · Simulink · MPPT · Power Electronics**
-
-Complete simulation of a photovoltaic system with single-phase inverter, PWM control, MPPT algorithm, battery storage, and grid connection. Energy flow optimization from component to system level.
-
-### 3. Process Control with SIMATIC PCS 7
-**SIMATIC PCS 7 · CFC/SFC · WinCC · TIA Portal**
-
-Planned and simulated an automated mixing plant — CFC/SFC control logic, sensor/actuator parameterization, and WinCC visualization interface.
-
-### 4. Weather Web Application
-**Python · API Integration · GPS · Responsive Design**
-
-Full-stack weather app with real-time data, GPS-based location detection, 7-day forecast.
-🔗 [Live Demo](https://6735f3c8-ceae-4744-8b44-706e6334c6f9-00-3obda55n4zh4.riker.replit.dev/)
-
-### 5. Superconducting Transformers (Bachelor Thesis)
-**Energy Technology · High Voltage**
-
-Investigated HTS transformer applications in medium voltage distribution — efficiency gains, fault current limiting, economic viability.
+I'm an electrical engineer passionate about building systems where **AI meets real-world operations** — industrial IoT, process automation, predictive maintenance, and fullstack AI applications. I turn complex problems into working, scalable solutions.
 
 ---
 
-## 💼 Work Experience
+## 🚀 Projects
+
+### ⚡ Automation & IoT
+
+| Project | Tech | Description |
+|---------|------|-------------|
+| **[Industrial IoT Monitoring System](https://github.com/Gastonitou/Industrial-IoT-Monitoring-Projekt)** | Python, IoT, Sensor Data, ML | End-to-end IoT system for real-time sensor data acquisition, threshold alerts, equipment health dashboard, and predictive maintenance |
+| **[Predictive Maintenance AI](https://github.com/Gastonitou/Predictive-Maintenance-AI)** | AI, ML, Anomaly Detection | ML-powered system for real-time sensor monitoring, anomaly detection, and automated failure prediction |
+| **SIMATIC PCS 7 — Automated Mixing Plant** | PCS 7, CFC/SFC, WinCC, TIA Portal | Simulated automated mixing plant with full control logic and operator visualization |
+| **PV Plant Simulation (MATLAB/Simulink)** | MATLAB, Simulink, MPPT | Complete PV system simulation with inverter, MPPT, battery storage, and grid connection |
+| **Superconducting Transformers (B.Sc. Thesis)** | HTS, Energy Tech, High Voltage | High-temperature superconducting transformer applications in medium voltage distribution networks |
+
+### 🤖 AI & Data
+
+| Project | Tech | Description |
+|---------|------|-------------|
+| **[KI-Betriebskosten-Scanner](https://github.com/Gastonitou/betriebskosten-scanner)** | FastAPI, Streamlit, OCR, LLM | KI-gestützter Rechnungsscanner für KMU — OCR + LLM-basierte Kostenanalyse (DE/EN) |
+| **[Ajili & Ajili — KI für Unternehmen](https://github.com/Gastonitou/ajili-und-ajili)** | Fullstack, FastAPI, SQLite | Bruder-Schwester-Business für KI-Lösungen im Mittelstand |
+| **[AI Tax Assistant RAG](https://github.com/Gastonitou/ai-tax-assistant-rag)** | RAG, LLM, FastAPI, FAISS | RAG-basierter KI-Assistent für Steuer- und Rechtsdokumentenanalyse |
+| **[CreatorAgent](https://github.com/Gastonitou/CreatorAgent)** | Multi-Agent, Browser Automation | Lokales AI-Framework für autonome Content-Erstellung via Multi-Agent-Kollaboration |
+
+### 🌐 Web Apps
+
+| Project | Tech | Description |
+|---------|------|-------------|
+| **[Fullstack Weather App](https://github.com/Gastonitou/weather-app-live)** | JS, API, GPS, Responsive | Wetter-App mit Echtzeitdaten, GPS-Erkennung und 7-Tage-Vorhersage |
+| **[Fullstack Fitness App](https://github.com/Gastonitou/fitness-app-live)** | Fullstack, UI/UX | Fitness-Tracker mit modernem Design und Workout-Tracking |
+| **[Workout Motivation Pipeline](https://github.com/Gastonitou/workoutmotivation-apps)** | ffmpeg, Python, Beat-sync | Automatisierte Workout-Videoproduktion mit Beat-Sync und Textoverlays |
+
+### 🎨 Design & Branding
+
+| Project | Tech | Description |
+|---------|------|-------------|
+| **[Mouss — Moroccan Coffee Corner](https://github.com/Gastonitou/mouss-website)** | HTML/CSS, Branding | Brand-Website für ein marokkanisches Coffee-Konzept |
+| **[BYD Design Showcase](https://github.com/Gastonitou/byd-showcase)** | CSS, UI Design | Produkt-Showcase für BYD Elektrofahrzeuge |
+| **[Dating App — gastonwetter](https://github.com/Gastonitou/gastonwetter)** | Fullstack, Privacy-first | Moderne Dating-Plattform mit Matching und Chat |
+| **[Bewerbungs-Agent](https://github.com/Gastonitou/bewerbungs-agent)** | Node.js, SMTP, Cron | Automatisierter Bewerbungsagent mit AI-Anschreiben und Browser-Automation |
+
+### 📊 Trading & Analysis
+
+| Project | Tech | Description |
+|---------|------|-------------|
+| **[Sktime-LLM Forecaster](https://github.com/Gastonitou/sktime-llm-forecaster)** | Time Series, LLM, sktime | Zeitreihen-Prognose mit sktime + LLM-Kombination |
+| **Trading ML — Crypto Signals** | ML, Python, Binance API | ML-basierte Trading-Signale für Kryptomärkte mit Binance-Integration |
+
+---
+
+## 💼 Experience
 
 **Quality Control & Maintenance — Ford Werke GmbH** (2022–2024)
 - Quality inspections on automated production lines
-- Process data analysis for equipment performance
-- Maintenance support & cross-team coordination
+- Process data analysis for equipment performance evaluation
+- Maintenance support and cross-team coordination
 
 **Energy & Building Technology — diaelectricum GmbH** (Mar 2024 – Jul 2025)
 - Electrical planning & PV design per VDE standards
 - BIM (Revit) integration, HOAI phases 1–8
-- Technical documentation & project coordination
+- Technical documentation, circuit diagrams, project coordination
 
 **Maintenance Engineering — Igus GmbH** (Jan 2023 – Feb 2024)
-- Fault analysis & troubleshooting electromechanical systems
+- Fault analysis and troubleshooting on electromechanical systems
 - Cross-department coordination to minimize downtime
 
 ---
 
-## 🛠️ Technical Toolbox
+## 🛠️ Technical Skills
 
-**Programming:** Python, C++, MATLAB/Simulink  
-**Automation:** SIMATIC PCS 7, TIA Portal, WinCC  
-**Design & CAD:** EPLAN, AutoCAD, Revit (BIM)  
-**Simulation:** MATLAB, Neplan  
-**IoT & Web:** Sensor Data, APIs, GitHub  
-**AI & Data:** AI Fundamentals, Data Analysis
+| Category | Skills |
+|----------|--------|
+| **Programming** | Python, C++, MATLAB/Simulink |
+| **Automation** | SIMATIC PCS 7, TIA Portal, WinCC, S7 |
+| **AI & ML** | LLMs, RAG, ML Models, Anomaly Detection |
+| **IoT & Hardware** | Sensors, Raspberry Pi, Modbus, OPC |
+| **Web & Backend** | FastAPI, Streamlit, Node.js, SQLite |
+| **Design & CAD** | EPLAN, AutoCAD, Revit (BIM) |
+| **Trading & Analysis** | Binance API, Technical Indicators, Time Series |
+| **DevOps** | Git/GitHub, Docker, Cloudflare, CI/CD |
 
 ---
 
@@ -79,6 +102,12 @@ Investigated HTS transformer applications in medium voltage distribution — eff
 
 ---
 
-## 🎯 Looking For
+## 🎓 Education
 
-A role where **AI meets real-world operations** — building systems that connect data, automation, and intelligent decision-making. Fast-paced, hands-on, ownership from concept to deployment.
+**Bachelor of Engineering (B.Eng.) — Electrical Engineering**
+Rheinische Fachhochschule Köln | 2024
+Thesis: Superconducting Transformers in Medium Voltage Grids
+
+---
+
+*Built with curiosity, shipped with results.*

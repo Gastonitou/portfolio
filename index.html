@@ -14,7 +14,7 @@
       color: #e0e0e0;
       line-height: 1.6;
     }
-    .container { max-width: 900px; margin: 0 auto; padding: 40px 24px; }
+    .container { max-width: 960px; margin: 0 auto; padding: 40px 24px; }
 
     /* Header */
     header {
@@ -41,10 +41,7 @@
       font-size: 0.9rem;
       color: #6666aa;
     }
-    header .contact a {
-      color: #e94560;
-      text-decoration: none;
-    }
+    header .contact a { color: #e94560; text-decoration: none; }
     header .contact a:hover { text-decoration: underline; }
 
     /* Sections */
@@ -87,7 +84,6 @@
       margin-bottom: 10px;
     }
     .project p { color: #b0b0cc; font-size: 0.92rem; }
-    .project ul { margin: 8px 0 0 18px; font-size: 0.9rem; color: #b0b0cc; }
     .project .link { margin-top: 10px; }
     .project .link a {
       color: #4fc3f7;
@@ -96,86 +92,75 @@
     }
     .project .link a:hover { text-decoration: underline; }
 
-    /* Skills Tags */
-    .skills-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-      gap: 12px;
+    .category-title {
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: #8888cc;
+      margin: 32px 0 16px;
+      padding-left: 8px;
+      border-left: 3px solid #e94560;
     }
-    .skill-item {
-      background: #15153a;
-      border: 1px solid #1e1e4a;
-      border-radius: 8px;
-      padding: 12px 16px;
-      display: flex;
-      gap: 8px;
-      font-size: 0.85rem;
-    }
-    .skill-item strong { color: #e94560; min-width: 100px; }
-    .skill-item span { color: #b0b0cc; }
 
     /* Experience */
     .exp-item {
       background: #15153a;
       border: 1px solid #1e1e4a;
-      border-radius: 8px;
-      padding: 18px 20px;
-      margin-bottom: 14px;
+      border-radius: 12px;
+      padding: 20px 24px;
+      margin-bottom: 16px;
     }
-    .exp-item h3 { font-size: 1rem; font-weight: 600; }
-    .exp-item .exp-meta {
-      font-size: 0.8rem;
-      color: #6666aa;
-      margin-bottom: 6px;
-    }
-    .exp-item ul { margin: 6px 0 0 16px; font-size: 0.85rem; color: #b0b0cc; }
-    .exp-item ul li { margin-bottom: 3px; }
+    .exp-item h3 { font-size: 1.05rem; font-weight: 700; }
+    .exp-meta { font-size: 0.82rem; color: #6666aa; margin: 4px 0 10px; }
+    .exp-item ul { margin: 0 0 0 18px; font-size: 0.88rem; color: #b0b0cc; }
 
-    /* Tags */
-    .tag {
-      display: inline-block;
-      background: #1e1e4a;
-      color: #b0b0cc;
-      padding: 4px 12px;
-      border-radius: 20px;
-      font-size: 0.78rem;
-      margin: 3px 4px 3px 0;
-      border: 1px solid #2a2a5a;
-    }
-    .tags { margin: 10px 0; }
-
-    /* Languages */
-    .lang-grid {
+    /* Skills */
+    .skills-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-      gap: 8px;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 12px;
+      margin-bottom: 20px;
     }
-    .lang-item {
+    .skill-item {
       background: #15153a;
       border: 1px solid #1e1e4a;
       border-radius: 8px;
-      padding: 10px 14px;
-      font-size: 0.9rem;
+      padding: 14px 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
     }
-    .lang-item .flag { margin-right: 6px; }
-    .lang-item .level {
-      color: #8888aa;
-      font-size: 0.8rem;
+    .skill-item strong { font-size: 0.8rem; color: #e94560; }
+    .skill-item span { font-size: 0.85rem; color: #b0b0cc; }
+    .tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 8px; }
+    .tag {
+      background: #1e1e4a;
+      color: #8888cc;
+      padding: 6px 14px;
+      border-radius: 20px;
+      font-size: 0.78rem;
+      font-weight: 600;
     }
 
-    /* Footer */
+    /* Languages */
+    .lang-grid { display: flex; flex-wrap: wrap; gap: 12px; }
+    .lang-item { background: #15153a; padding: 12px 18px; border-radius: 8px; font-size: 0.9rem; border: 1px solid #1e1e4a; }
+    .level { color: #8888aa; font-size: 0.85rem; }
+
+    /* GitHub Stats */
+    .github-stats {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      justify-content: center;
+      margin: 20px 0;
+    }
+
     footer {
       text-align: center;
       padding: 40px 0;
-      border-top: 1px solid #1e1e3f;
-      font-size: 0.8rem;
       color: #5555aa;
-    }
-
-    @media (max-width: 600px) {
-      header h1 { font-size: 1.8rem; }
-      .container { padding: 24px 16px; }
-      .skills-grid { grid-template-columns: 1fr; }
+      font-size: 0.85rem;
+      border-top: 1px solid #1e1e3f;
     }
   </style>
 </head>
@@ -185,12 +170,10 @@
     <!-- Header -->
     <header>
       <h1>Ghassen Ajili</h1>
-      <div class="subtitle">Electrical Engineer • IoT & Automation • Building with AI</div>
+      <div class="subtitle">B.Eng. Electrical Engineering · IoT & Automation · AI Enthusiast</div>
       <div class="contact">
-        Cologne, Germany &nbsp;|&nbsp;
-        <a href="mailto:ghassenlaajili6@gmail.com">ghassenlaajili6@gmail.com</a> &nbsp;|&nbsp;
-        +49 151 24952018 &nbsp;|&nbsp;
-        <a href="https://github.com/ghassenajili">GitHub ↗</a>
+        📍 Cologne, Germany &nbsp;·&nbsp; 📧 <a href="mailto:ghassenlaajili6@gmail.com">ghassenlaajili6@gmail.com</a> &nbsp;·&nbsp; 
+        🔗 <a href="https://github.com/Gastonitou">GitHub</a>
       </div>
     </header>
 
@@ -198,7 +181,9 @@
     <section>
       <h2>About</h2>
       <p style="color:#b0b0cc; font-size:0.95rem;">
-        Electrical engineer (B.Eng.) with a deep passion for automation, IoT, and AI. I build things that work — from sensor data pipelines to process control systems. Hands-on experience at Ford, diaelectricum, and Igus. Fluent in 5 languages. Looking for a place where <strong style="color:#e94560;">AI meets real-world operations</strong>.
+        Electrical engineer passionate about building systems where <strong>AI meets real-world operations</strong> — 
+        industrial IoT, process automation, predictive maintenance, and fullstack AI applications. 
+        I turn complex problems into working, scalable solutions.
       </p>
     </section>
 
@@ -206,36 +191,139 @@
     <section>
       <h2>Projects</h2>
 
+      <div class="category-title">⚡ Automation &amp; IoT</div>
+      
       <div class="project">
         <h3>Industrial IoT Monitoring System</h3>
-        <div class="tech">Python • IoT • Sensor Data • Real-time Analytics</div>
-        <p>End-to-end IoT system for real-time acquisition, processing, and visualization of industrial sensor data. Features threshold-based alerts, structured data storage, and equipment health dashboard. Enables predictive maintenance and reduces downtime.</p>
+        <div class="tech">Python · IoT · Sensor Data · Predictive Maintenance</div>
+        <p>End-to-end industrial IoT system for real-time acquisition, processing, and visualization of sensor data. Features threshold-based alerts, structured storage, equipment health dashboard, and predictive maintenance analysis.</p>
+        <div class="link">🔗 <a href="https://github.com/Gastonitou/Industrial-IoT-Monitoring-Projekt">GitHub</a></div>
+      </div>
+
+      <div class="project">
+        <h3>Predictive Maintenance AI</h3>
+        <div class="tech">AI · Automation · ML · Anomaly Detection</div>
+        <p>AI-powered predictive maintenance system for industrial automation. Real-time sensor monitoring, anomaly detection with ML models, and automated failure prediction to minimize equipment downtime and optimize maintenance schedules.</p>
+        <div class="link">🔗 <a href="https://github.com/Gastonitou/Predictive-Maintenance-AI">GitHub</a></div>
+      </div>
+
+      <div class="project">
+        <h3>SIMATIC PCS 7 — Automated Mixing Plant</h3>
+        <div class="tech">SIMATIC PCS 7 · CFC/SFC · WinCC · TIA Portal</div>
+        <p>Planned and simulated an automated mixing plant: CFC/SFC control logic, sensor/actuator parameterization, and WinCC visualization interface for full operator control and monitoring.</p>
       </div>
 
       <div class="project">
         <h3>PV Plant Simulation (MATLAB/Simulink)</h3>
-        <div class="tech">MATLAB • Simulink • MPPT • Power Electronics</div>
-        <p>Complete simulation of a photovoltaic system with single-phase inverter, PWM control, MPPT algorithm, battery storage, and grid connection. Optimized energy flow analysis from component to system level.</p>
+        <div class="tech">MATLAB · Simulink · MPPT · Power Electronics</div>
+        <p>Complete simulation of a photovoltaic system with single-phase inverter, PWM control, MPPT algorithm, battery storage, and grid connection. Energy flow optimization from component to system level.</p>
       </div>
 
       <div class="project">
-        <h3>Process Control with SIMATIC PCS 7</h3>
-        <div class="tech">SIMATIC PCS 7 • CFC/SFC • WinCC • TIA Portal</div>
-        <p>Planned and simulated an automated mixing plant: CFC/SFC control logic, sensor/actuator parameterization, and WinCC visualization interface for operator control and monitoring.</p>
+        <h3>Superconducting Transformers (Bachelor Thesis)</h3>
+        <div class="tech">Energy Technology · High Voltage · HTS</div>
+        <p>Investigated HTS transformer applications in medium voltage distribution networks — efficiency gains, fault current limiting capability, and economic viability for modern power grids.</p>
+      </div>
+
+      <div class="category-title">🤖 AI &amp; Data</div>
+
+      <div class="project">
+        <h3>KI-Betriebskosten-Scanner</h3>
+        <div class="tech">FastAPI · Streamlit · OCR · LLM · Python</div>
+        <p>KI-gestützter Scanner für KMU: Analysiert Rechnungen per OCR, extrahiert Kostenstrukturen und identifiziert Einsparpotenziale. Streamlit-Frontend, FastAPI-Backend, mehrsprachig (DE/EN).</p>
+        <div class="link">🔗 <a href="https://github.com/Gastonitou/betriebskosten-scanner">GitHub</a></div>
       </div>
 
       <div class="project">
-        <h3>Weather Web Application</h3>
-        <div class="tech">Python • API Integration • GPS • Responsive Design</div>
-        <p>Full-stack weather app with real-time weather data, GPS-based location detection, 7-day forecast, and responsive mobile-friendly design.</p>
-        <div class="link">🔗 <a href="https://6735f3c8-ceae-4744-8b44-706e6334c6f9-00-3obda55n4zh4.riker.replit.dev/">Live Demo</a></div>
+        <h3>Ajili &amp; Ajili — KI für Unternehmen</h3>
+        <div class="tech">Fullstack · FastAPI · SQLite · Webdesign</div>
+        <p>Bruder-Schwester-Business: KI-Lösungen für kleine und mittlere Unternehmen. Zweisprachige Website mit Scanner, Kontaktformular, Leistungsübersicht und Cloudflare-Deployment.</p>
+        <div class="link">🔗 <a href="https://github.com/Gastonitou/ajili-und-ajili">GitHub</a></div>
       </div>
 
       <div class="project">
-        <h3>Superconducting Transformers in Medium Voltage Grids</h3>
-        <div class="tech">Energy Technology • High Voltage • Simulation</div>
-        <p>Bachelor thesis investigating HTS transformer applications in medium voltage distribution networks — efficiency gains, fault current limiting, and economic viability analysis.</p>
+        <h3>AI Tax Assistant RAG</h3>
+        <div class="tech">RAG · LLM · FastAPI · Vector Search</div>
+        <p>RAG-based AI assistant for tax and legal document analysis. Uses LLMs &amp; vector search (FAISS) to provide context-aware, reliable answers from unstructured legal documents via a modular FastAPI backend.</p>
+        <div class="link">🔗 <a href="https://github.com/Gastonitou/ai-tax-assistant-rag">GitHub</a></div>
       </div>
+
+      <div class="project">
+        <h3>CreatorAgent Framework</h3>
+        <div class="tech">AI Framework · Multi-Agent · Browser Automation</div>
+        <p>Self-operating AI framework that runs fully locally without external APIs. Combines browser automation, task planning, and multi-agent collaboration to autonomously research, create, and refine digital content.</p>
+        <div class="link">🔗 <a href="https://github.com/Gastonitou/CreatorAgent">GitHub</a></div>
+      </div>
+
+      <div class="category-title">🌐 Web Apps</div>
+
+      <div class="project">
+        <h3>Fullstack Weather App</h3>
+        <div class="tech">JavaScript · API · GPS · Responsive Design</div>
+        <p>Full-stack weather application with real-time data, GPS-based location detection, 7-day forecast, and responsive mobile-first design. Deployed with multiple live variants.</p>
+        <div class="link">🔗 <a href="https://github.com/Gastonitou/weather-app-live">GitHub</a></div>
+      </div>
+
+      <div class="project">
+        <h3>Fullstack Fitness App</h3>
+        <div class="tech">Fullstack · UI/UX · Mobile-first</div>
+        <p>Fullstack fitness application with modern UI/UX design, workout tracking, meal planning, and responsive layout. Built for cross-platform use with clean architecture.</p>
+        <div class="link">🔗 <a href="https://github.com/Gastonitou/fitness-app-live">GitHub</a></div>
+      </div>
+
+      <div class="project">
+        <h3>Workout Motivation Video Pipeline</h3>
+        <div class="tech">ffmpeg · Python · Beat-sync · Text Overlays</div>
+        <p>Automated workout motivation video production: stock footage assembly, beat-synced transitions, motivational text overlays, end credits — all rendered locally with ffmpeg and Python.</p>
+        <div class="link">🔗 <a href="https://github.com/Gastonitou/workoutmotivation-apps">GitHub</a></div>
+      </div>
+
+      <div class="category-title">🎨 Design &amp; Branding</div>
+
+      <div class="project">
+        <h3>Mouss — Moroccan Coffee Corner</h3>
+        <div class="tech">HTML/CSS · Branding · Responsive Design</div>
+        <p>Brand website for a Moroccan coffee concept. Warm-toned design showcasing coffee culture, ambiance, and menu. Fully responsive with modern visual identity.</p>
+        <div class="link">🔗 <a href="https://github.com/Gastonitou/mouss-website">GitHub</a></div>
+      </div>
+
+      <div class="project">
+        <h3>BYD Design Showcase</h3>
+        <div class="tech">CSS · UI Design · Automotive Branding</div>
+        <p>Clean product showcase page for BYD electric vehicles. Focus on visual presentation, responsive hero sections, and brand alignment for the EV industry.</p>
+        <div class="link">🔗 <a href="https://github.com/Gastonitou/byd-showcase">GitHub</a></div>
+      </div>
+
+      <div class="project">
+        <h3>Dating App — gastonwetter</h3>
+        <div class="tech">Fullstack · UI/UX · Privacy-first</div>
+        <p>Modern dating web application with profile creation, smart matching, and messaging. Designed with focus on usability, data privacy, and scalable backend architecture.</p>
+        <div class="link">🔗 <a href="https://github.com/Gastonitou/gastonwetter">GitHub</a></div>
+      </div>
+
+      <div class="project">
+        <h3>Bewerbungs-Agent</h3>
+        <div class="tech">Automation · Node.js · SMTP · Cron</div>
+        <p>Automated job application agent: searches matching roles, crafts AI-generated cover letters, and submits applications via email and browser automation. Daily cron-based operation with smart retry logic.</p>
+        <div class="link">🔗 <a href="https://github.com/Gastonitou/bewerbungs-agent">GitHub</a></div>
+      </div>
+
+      <div class="category-title">📊 Trading &amp; Analysis</div>
+
+      <div class="project">
+        <h3>Sktime-LLM Forecaster</h3>
+        <div class="tech">Time Series · LLM · sktime · Python</div>
+        <p>Time series forecasting combining sktime statistical models with LLM-based analysis for enhanced prediction accuracy on temporal business data.</p>
+        <div class="link">🔗 <a href="https://github.com/Gastonitou/sktime-llm-forecaster">GitHub</a></div>
+      </div>
+
+      <div class="project">
+        <h3>Trading ML — Crypto Signals</h3>
+        <div class="tech">ML · Python · Binance API · Technical Analysis</div>
+        <p>Machine learning-based trading signal generator for cryptocurrency markets. Integrates Binance real-time data, technical indicators, and trained ML models for automated trade signals.</p>
+        <div class="link">🔗 <a href="https://github.com/Gastonitou/portfolio">GitHub</a></div>
+      </div>
+
     </section>
 
     <!-- Experience -->
@@ -243,7 +331,7 @@
       <h2>Experience</h2>
 
       <div class="exp-item">
-        <h3>Quality Control & Maintenance — Ford Werke GmbH</h3>
+        <h3>Quality Control &amp; Maintenance — Ford Werke GmbH</h3>
         <div class="exp-meta">Cologne | 2022 – 2024</div>
         <ul>
           <li>Quality inspections on automated production lines</li>
@@ -253,10 +341,10 @@
       </div>
 
       <div class="exp-item">
-        <h3>Energy & Building Technology — diaelectricum GmbH</h3>
+        <h3>Energy &amp; Building Technology — diaelectricum GmbH</h3>
         <div class="exp-meta">Cologne | Mar 2024 – Jul 2025</div>
         <ul>
-          <li>Electrical planning & PV design per VDE standards</li>
+          <li>Electrical planning &amp; PV design per VDE standards</li>
           <li>BIM (Revit) integration, HOAI phases 1–8</li>
           <li>Technical documentation, circuit diagrams, project coordination</li>
         </ul>
@@ -277,27 +365,21 @@
       <h2>Technical Skills</h2>
       <div class="skills-grid">
         <div class="skill-item"><strong>Programming</strong><span>Python, C++, MATLAB/Simulink</span></div>
-        <div class="skill-item"><strong>Automation</strong><span>SIMATIC PCS 7, TIA Portal, WinCC</span></div>
-        <div class="skill-item"><strong>Design & CAD</strong><span>EPLAN, AutoCAD, Revit (BIM)</span></div>
-        <div class="skill-item"><strong>Simulation</strong><span>MATLAB, Neplan</span></div>
-        <div class="skill-item"><strong>IoT & Web</strong><span>Sensor Data, APIs, GitHub</span></div>
-        <div class="skill-item"><strong>AI & Data</strong><span>AI Fundamentals, Data Analysis</span></div>
+        <div class="skill-item"><strong>Automation</strong><span>SIMATIC PCS 7, TIA Portal, WinCC, S7</span></div>
+        <div class="skill-item"><strong>AI &amp; ML</strong><span>LLMs, RAG, ML Models, Anomaly Detection</span></div>
+        <div class="skill-item"><strong>IoT &amp; Hardware</strong><span>Sensors, Raspberry Pi, Modbus, OPC</span></div>
+        <div class="skill-item"><strong>Web &amp; Backend</strong><span>FastAPI, Streamlit, Node.js, SQLite</span></div>
+        <div class="skill-item"><strong>Design &amp; CAD</strong><span>EPLAN, AutoCAD, Revit (BIM)</span></div>
+        <div class="skill-item"><strong>Trading &amp; Analysis</strong><span>Binance API, Technical Indicators, Time Series</span></div>
+        <div class="skill-item"><strong>DevOps</strong><span>Git/GitHub, Docker, Cloudflare, CI/CD</span></div>
       </div>
       <div class="tags">
-        <span class="tag">Python</span>
-        <span class="tag">C++</span>
-        <span class="tag">MATLAB</span>
-        <span class="tag">PCS 7</span>
-        <span class="tag">TIA Portal</span>
-        <span class="tag">WinCC</span>
-        <span class="tag">EPLAN</span>
-        <span class="tag">AutoCAD</span>
-        <span class="tag">Revit</span>
-        <span class="tag">Neplan</span>
-        <span class="tag">Git/GitHub</span>
-        <span class="tag">IoT</span>
-        <span class="tag">API</span>
-        <span class="tag">AI</span>
+        <span class="tag">Python</span><span class="tag">C++</span><span class="tag">MATLAB</span>
+        <span class="tag">PCS 7</span><span class="tag">TIA Portal</span><span class="tag">WinCC</span>
+        <span class="tag">EPLAN</span><span class="tag">AutoCAD</span><span class="tag">Revit</span>
+        <span class="tag">FastAPI</span><span class="tag">Streamlit</span><span class="tag">Node.js</span>
+        <span class="tag">LLM</span><span class="tag">RAG</span><span class="tag">ML</span>
+        <span class="tag">IoT</span><span class="tag">ffmpeg</span><span class="tag">Git/GitHub</span>
       </div>
     </section>
 
@@ -323,8 +405,14 @@
       </div>
     </section>
 
+    <div class="github-stats">
+      <a href="https://github.com/Gastonitou"><img src="https://img.shields.io/github/followers/Gastonitou?style=social" alt="GitHub followers"/></a>
+      <a href="https://github.com/Gastonitou?tab=repositories"><img src="https://img.shields.io/badge/21%20Repositories-Gastonitou-blue" alt="Repos"/></a>
+    </div>
+
     <footer>
       Ghassen Ajili — Built with curiosity, shipped with results.
+      <br>Portfolio v2.0 — June 2026
     </footer>
 
   </div>
